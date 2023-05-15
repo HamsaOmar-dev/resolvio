@@ -18,7 +18,7 @@ const Header = () => {
             <li><a href='#testimonial'>Testimonial</a></li>
           </ul>
         </div>
-        <button className={styles.get_btn}><a href="#get-strated">Get Started</a></button>
+        <button className={styles.get_btn}><a href="#get-started">Get Started</a></button>
       </div>
       <div className={isMenuOpen ? styles.main_header_mobile : styles.main_header_close}>
       <div className={styles.header_mobile}>
@@ -38,7 +38,7 @@ const Header = () => {
                 <li onClick={() => setIsMenuOpen(false)}><a href='#service'>Service</a></li>
                 <li onClick={() => setIsMenuOpen(false)}><a href='#testimonial'>Testimonial</a></li>
               </ul>
-              <button className={styles.get_btn_mobile} onClick={() => setIsMenuOpen(false)}><a href="#get-strated">Get Started</a></button>
+              <button className={styles.get_btn_mobile} onClick={() => setIsMenuOpen(false)}><a href="#get-started">Get Started</a></button>
             </div>
           </div>
         }

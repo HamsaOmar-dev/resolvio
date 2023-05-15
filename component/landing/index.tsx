@@ -128,7 +128,6 @@ const Landing = () => {
       .catch((err) => {
         console.log(err);
       });
-    console.log(data);
   };
 
   return (
@@ -146,7 +145,7 @@ const Landing = () => {
         </div>
         <div className={styles.button_design}>
           <Image src={button_left} alt="design" />
-          <a href="#get-strated">
+          <a href="#get-started">
             <button>Try it out</button>
           </a>
           <Image
@@ -305,7 +304,7 @@ const Landing = () => {
         <p className={styles.success_text}>{servermsg}</p>
       ) : (
         <form onSubmit={handleSubmit(onSubmit)}>
-          <div className={styles.form_container} id="get-strated">
+          <div className={styles.form_container} id="get-started">
             <div className={styles.form_title}>
               Revitalize Your Restaurant Revenue: Request a Demo of Our Driver
               Food Loss Recovery Solution

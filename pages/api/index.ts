@@ -22,7 +22,6 @@ async function handleGet(req: NextApiRequest, res: NextApiResponse) {
 }
 
 async function handlePost(req: NextApiRequest, res: NextApiResponse) {
-  console.log(req.body);
   await prisma.email
     .create({
       data: {
