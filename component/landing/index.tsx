@@ -359,8 +359,8 @@ const Landing = () => {
                   {...register("PhoneNumber", {
                     required: "Required",
                     minLength: {
-                      value: 6,
-                      message: "Must be at least 6 digits",
+                      value: 10,
+                      message: "Must be at least 10 digits",
                     },
                     maxLength: {
                       value: 12,
