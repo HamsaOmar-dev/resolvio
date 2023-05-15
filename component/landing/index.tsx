@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { useForm } from "react-hook-form";
 import styles from "@/styles/Landing.module.css";
 import { Rate } from "antd";
 import Header from "../common/Header";
@@ -102,6 +103,27 @@ const Landing = () => {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+  };
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = async (data: any) => {
+    // setLoading(true);
+    // await axios
+    //   .post("/api", data)
+    //   .then((res) => {
+    //     setServermsg(res.data);
+    //     setLoading(false);
+    //     setSuccessmsg(true);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
+    console.log(data);
   };
 
   return (
@@ -271,39 +293,114 @@ const Landing = () => {
           </div>
         </Slider>
       </div>
-      <div className={styles.form_container} id="get-strated">
-        <div className={styles.form_title}>
-          Revitalize Your Restaurant Revenue: Request a Demo of Our Driver Food
-          Loss Recovery Solution
+
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <div className={styles.form_container} id="get-strated">
+          <div className={styles.form_title}>
+            Revitalize Your Restaurant Revenue: Request a Demo of Our Driver
+            Food Loss Recovery Solution
+          </div>
+          <div>
+            <div className={styles.form_flex}>
+              <div className={styles.label_input}>
+                {/* <label>First Name</label> */}
+                <input
+                  placeholder="First Name"
+                  type="text"
+                  className={styles.input_container}
+                  {...register("FirstName", {
+                    required: "Required",
+                  })}
+                />
+                <p className={styles.input_error_section}>
+                  {errors.FirstName?.message?.toString()}
+                </p>
+              </div>
+              <div className={styles.label_input}>
+                {/* <label>last Name</label> */}
+                <input
+                  placeholder="Last Name"
+                  type="text"
+                  className={styles.input_container}
+                  {...register("LastName", {
+                    required: "Required",
+                  })}
+                />
+                <p className={styles.input_error_section}>
+                  {errors.LastName?.message?.toString()}
+                </p>
+              </div>
+            </div>
+            <div className={styles.form_flex}>
+              <div className={styles.label_input}>
+                {/* <label>Company Email</label> */}
+                <input
+                  placeholder="Company Email"
+                  type="email"
+                  className={styles.input_container}
+                  {...register("CompanyEmail", {
+                    required: "Required",
+                    pattern: {
+                      value: /^\S+@\S+$/i,
+                      message: "Please enter your Company Email",
+                    },
+                  })}
+                />
+                <p className={styles.input_error_section}>
+                  {errors.CompanyEmail?.message?.toString()}
+                </p>
+              </div>
+              <div className={styles.label_input}>
+                {/* <label>Phone</label> */}
+                <input
+                  placeholder="Phone Number"
+                  type="number"
+                  className={styles.input_container}
+                  {...register("PhoneNumber", {
+                    required: "Required",
+                    minLength: {
+                      value: 6,
+                      message: "Must be at least 6 digits",
+                    },
+                    maxLength: {
+                      value: 12,
+                      message: "Cant be longer than 12 digits",
+                    },
+                  })}
+                />
+                <p className={styles.input_error_section}>
+                  {errors.PhoneNumber?.message?.toString()}
+                </p>
+              </div>
+            </div>
+            <div className={styles.label_input}>
+              {/* <label>Company Name</label> */}
+              <input
+                placeholder="Company Name"
+                type="text"
+                className={styles.input_container}
+                {...register("CompanyName", {
+                  required: "Required",
+                })}
+              />
+              <p className={styles.input_error_section}>
+                {errors.CompanyName?.message?.toString()}
+              </p>
+            </div>
+            <button type="submit" className={styles.demo_btn}>
+              Get a Demo
+            </button>
+          </div>
         </div>
-        <div>
-          <div className={styles.form_flex}>
-            <div className={styles.label_input}>
-              {/* <label>First Name</label> */}
-              <input type="text" placeholder="First Name" />
-            </div>
-            <div className={styles.label_input}>
-              {/* <label>last Name</label> */}
-              <input type="text" placeholder="Last Name" />
-            </div>
-          </div>
-          <div className={styles.form_flex}>
-            <div className={styles.label_input}>
-              {/* <label>Company Email</label> */}
-              <input type="email" placeholder="Company Email" />
-            </div>
-            <div className={styles.label_input}>
-              {/* <label>Phone</label> */}
-              <input type="number" placeholder="Phone" />
-            </div>
-          </div>
-          <div className={styles.label_input}>
-            {/* <label>Company Name</label> */}
-            <input type="text" placeholder="Company Name" />
-          </div>
-          <button className={styles.demo_btn}>Get a Demo</button>
-        </div>
-      </div>
+      </form>
+
+      {/* {loading ? (
+        <p className={styles.loading_text}>Loading...</p>
+      ) : successmsg ? (
+        <p className={styles.success_text}>{servermsg}</p>
+      ) : ( */}
+      {/* )} */}
+
       <div className={styles.copy_right_text}>Copyright © Resolvio 2023</div>
     </>
   );
