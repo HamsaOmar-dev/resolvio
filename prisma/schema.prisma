@@ -13,7 +13,7 @@ model Email {
   companyEmail String   @unique
   firstName    String
   lastName     String
-  companyName String   
+  companyName  String
   phoneNumber  String
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
