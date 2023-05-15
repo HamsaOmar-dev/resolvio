@@ -1,0 +1,467 @@
+.hero_container {
+  background-color: #fe8b1d;
+  border-radius: 0 0 20px 20px;
+}
+.hero_header_text {
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 77px;
+  text-align: center;
+  color: #ffffff;
+  max-width: 1213px;
+  padding-top: 92px;
+  padding-bottom: 24px;
+  margin: 0 auto;
+}
+.hero_desc_container {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 29px;
+  max-width: 749px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 auto;
+}
+.button_design {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  gap: 63px;
+}
+.button_design button {
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 24px;
+  background: #222222;
+  padding: 22px 43px;
+  border: none;
+  margin-top: 20px;
+  border-radius: 128px;
+  cursor: pointer;
+}
+.right_btn_img {
+  transform: scaleX(-1);
+}
+.bottom_bg {
+  margin-top: 64px !important;
+  max-width: 100vw;
+  width: 70%;
+  height: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.slider_header {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  padding-top: 128px;
+  padding-bottom: 30px;
+}
+.profit_container {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  padding-top: 128px;
+  padding-bottom: 144px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.image_container {
+  width: 40%;
+}
+.image_container img {
+  padding-left: 60px;
+  padding-right: 20px;
+}
+.profit_right_container {
+  width: 60%;
+  position: relative;
+}
+.border_dash {
+  position: absolute;
+  top: 46%;
+  left: 2.9%;
+  z-index: 0;
+}
+.profit_text {
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 38px;
+}
+.profit_desc {
+  font-weight: 400;
+  font-size: 21px;
+  padding-top: 24px;
+  max-width: 755px;
+  line-height: 29px;
+  color: #5e5e5e;
+}
+.icon_text {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  position: relative;
+}
+.icon_text_container {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.icon_orange {
+  background: #fe8b1d;
+  padding: 8px;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  z-index: 99;
+}
+.icon_right_text {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 29px;
+}
+.choose_text {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  line-height: 38px;
+  padding-bottom: 64px;
+}
+.partner_card {
+  background: #fafafa;
+  border-radius: 20px;
+  padding: 48px 40px;
+  text-align: center;
+}
+.partner_card h2 {
+  font-weight: 500;
+  font-size: 22px;
+  padding: 16px 0;
+  line-height: 29px;
+}
+.partner_card div {
+  max-width: 520px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+  color: #5e5e5e;
+  margin: 0 auto;
+}
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  padding-bottom: 128px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.testonomial_container {
+  padding: 64px 35px;
+  background: #fafafa;
+  border-radius: 20px;
+  position: relative;
+}
+.comment_container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+}
+.comment_container span {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 86px;
+  color: #fe8b1d;
+  text-align: center;
+}
+.comment_container div {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+}
+.rating_name_container {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.name_img {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.name_img img {
+  border-radius: 50%;
+  height: 62px;
+  width: 62px;
+}
+.name_img div {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.form_container {
+  margin: 128px auto;
+  padding: 48px 88px;
+  max-width: 867px;
+  width: 100%;
+  background: #ffffff;
+  border: 2px solid #f5f5f5;
+  box-shadow: 0px 0px 48px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.form_title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  padding-bottom: 48px;
+}
+.form_container input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5e5e5e;
+}
+.form_container input {
+  border: 1px solid #979696;
+  border-radius: 128px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 40px;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+.form_flex {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+}
+.label_input {
+  width: 100%;
+}
+.demo_btn {
+  background: #fe8b1d;
+  border-radius: 128px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 20px 0;
+  border: none;
+  cursor: pointer;
+}
+.demo_btn:hover {
+  background: #fc912d;
+}
+.copy_right_text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 48px 0;
+  text-align: center;
+  width: 100%;
+  background: #222222;
+  border-radius: 20px 20px 0 0;
+  color: #ffffff;
+}
+.company_logo_container {
+  padding: 14px 78px;
+  background: #fafafa;
+  border-radius: 16px;
+  margin-right: 48px;
+  width: 256px !important;
+}
+.company_logo_container img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.slider_container {
+  margin-top: 64px;
+}
+.slider_container2 {
+  margin-top: 32px;
+}
+@media only screen and (max-width: 1250px) {
+  .profit_container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .hero_header_text {
+    padding-top: 80px;
+    font-size: 34px;
+    line-height: 43px;
+    max-width: 705px;
+  }
+  .hero_desc_container {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 705px;
+  }
+  .button_design button {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .slider_header {
+    padding-top: 96px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .image_container,
+  .image_container img {
+    width: 100%;
+  }
+  .profit_right_container {
+    width: 100%;
+    padding: 0 64px;
+    position: relative;
+  }
+  .border_dash {
+    top: 14%;
+    left: 3.2%;
+  }
+  .profit_text {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .profit_desc {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .icon_text_container {
+    gap: 50px;
+  }
+  .icon_right_text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .choose_text {
+    font-size: 24px;
+    line-height: 29px;
+    padding-bottom: 32px;
+  }
+  .partner_card h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .partner_card div {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .comment_container div {
+    font-size: 28px;
+    line-height: 34px;
+    max-width: 495.65px;
+    margin: 0 auto;
+  }
+  .rating_name_container {
+    max-width: 495.65px;
+  }
+  .form_container {
+    margin: 96px auto;
+    max-width: 707px;
+    padding: 48px 77px;
+  }
+  .form_title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .demo_btn {
+    padding: 16px 0;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .hero_header_text {
+    padding-top: 110px;
+    font-size: 28px;
+    line-height: 34px;
+    max-width: 360px;
+  }
+  .hero_desc_container {
+    font-size: 16px;
+    line-height: 19px;
+    max-width: 360px;
+  }
+  .button_design button {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .button_design {
+    gap: 20px;
+  }
+  .button_design img {
+    width: 62.6px;
+    height: 27.1px;
+  }
+  .slider_header {
+    padding-top: 80px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .profit_text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .card_container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .border_dash {
+    left: 8.5%;
+  }
+  .partner_card {
+    padding: 24px 8px;
+  }
+  .partner_card img {
+    height: 48px;
+    width: 48px;
+  }
+  .comment_container div {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 302.65px;
+    margin: 0 auto;
+  }
+  .rating_name_container {
+    max-width: 302.65px;
+  }
+  .form_container {
+    margin: 96px auto;
+    max-width: 350px;
+    padding: 48px 24px;
+  }
+  .form_title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .demo_btn {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 12px 0;
+  }
+  .nextbtn {
+    width: 20px;
+    height: 20px;
+  }
+}

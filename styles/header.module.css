@@ -1,0 +1,121 @@
+.header_container {
+    background: #FE8B1D;
+    padding: 16px 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_links {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    border-radius: 128px;
+    padding: 16px 40px;
+    display: flex;
+    gap: 32px;
+    font-weight: 500;
+    font-size: 19px;
+    color: #FFF;
+    line-height: 24px;
+    list-style: none;
+    margin-bottom: 0 !important;
+}
+.get_btn {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 24px;    
+    padding: 20px 32px;
+    border: none;
+    background: #222222;
+    border-radius: 128px;
+}
+.main_header_mobile, .main_header_close{
+    display: none;
+}
+@media only screen and (max-width: 850px) {
+    .header_container{
+        padding: 16px 35px;
+    }
+    .logo{
+        height:29px;
+        width: 112px;
+    }
+    .get_btn{
+        font-size: 16px;
+        padding: 18px 24px;
+    }
+    .nav_links{
+        font-size: 16px;
+        padding: 16px 32px;
+    }
+}
+@media only screen and (max-width: 460px) {
+    .header_container{
+        display: none;
+    }
+    .header_container_mobile{
+        background: #FE8B1D;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo {
+        width: 79.14px;
+        height: 21px;
+    }
+    .header_container_mobile_menu{
+        display: flex;
+        background: #FE8B1D;
+        padding: 10px 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header_mobile{
+        background-color: #FE8B1D;
+        padding: 16px 32px 32px 32px;
+    }
+    .main_header_mobile{
+        height: 100vh;
+        overflow: hidden;
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background: rgba(0, 0, 0, 0.25);
+        z-index: 999;
+    }
+    .main_header_close{
+        /* height: 100vh; */
+        overflow: hidden;
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+    .nav_links_mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 52px;
+        text-align: center;
+        list-style: none;
+    }
+    .nav_links_mobile li {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+    .get_btn_mobile{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        background: #222222;
+        border-radius: 129px;
+        width: 100%;
+        border: none;
+        padding: 13px 0;
+        margin-top: 20px;
+    }
+}
