@@ -183,9 +183,12 @@ const Landing = () => {
             Increase your Profit with our Service
           </div>
           <div className={styles.profit_desc}>
-            Lorem ipsum dolor sit amet consectetur. Nisl tincidunt dolor nulla
+            {/* Lorem ipsum dolor sit amet consectetur. Nisl tincidunt dolor nulla
             in convallis nibh. Dui non arcu massa quisque et. Tellus et
-            adipiscing ac magna mi cras condimentum hac interdum.{" "}
+            adipiscing ac magna mi cras condimentum hac interdum.{" "} */}
+            We&apos;ve built great relationships with delivery service providers
+            like Doordash and UberEats to Recover Delivery Losses on your
+            belhalf.
           </div>
           <div className={styles.icon_text_container}>
             <div className={styles.icon_text}>
@@ -220,7 +223,7 @@ const Landing = () => {
       </div>
       <div id="service">
         <div className={styles.choose_text}>
-          Why you must Choose us as your Partners{" "}
+          Why you Should Partner with Us{" "}
         </div>
         <div className={styles.card_container}>
           <div className={styles.partner_card}>
