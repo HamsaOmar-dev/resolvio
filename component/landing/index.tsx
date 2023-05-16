@@ -15,7 +15,7 @@ import coin_icon from "../../public/img/coin_icon.svg";
 import transfer_icon from "../../public/img/transfer_icon.svg";
 import bag_icon from "../../public/img/bag_icon.svg";
 import wallet_icon from "../../public/img/wallet_icon.svg";
-import user_img from "../../public/img/user_img.svg";
+import user_img from "../../public/img/user_img.webp";
 import logo1 from "../../public/img/logo1.svg";
 import logo2 from "../../public/img/logo2.svg";
 import logo3 from "../../public/img/logo3.svg";
@@ -28,12 +28,12 @@ import quote from "../../public/img/quote.svg";
 import Slider from "react-slick";
 
 const Landing = () => {
-  const companyLogos = [logo1, logo2, logo3, logo4, logo5];
+  const companyLogos = [logo1, logo2, logo3, logo5, logo1, logo2, logo3, logo5];
   const settings2 = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 4.5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -183,12 +183,9 @@ const Landing = () => {
             Increase your Profit with our Service
           </div>
           <div className={styles.profit_desc}>
-            {/* Lorem ipsum dolor sit amet consectetur. Nisl tincidunt dolor nulla
+            Lorem ipsum dolor sit amet consectetur. Nisl tincidunt dolor nulla
             in convallis nibh. Dui non arcu massa quisque et. Tellus et
-            adipiscing ac magna mi cras condimentum hac interdum.{" "} */}
-            We&apos;ve built great relationships with delivery service providers
-            like Doordash and UberEats to Recover Delivery Losses on your
-            belhalf.
+            adipiscing ac magna mi cras condimentum hac interdum.{" "}
           </div>
           <div className={styles.icon_text_container}>
             <div className={styles.icon_text}>
@@ -223,7 +220,7 @@ const Landing = () => {
       </div>
       <div id="service">
         <div className={styles.choose_text}>
-          Why you Should Partner with Us{" "}
+          Why you must Choose us as your Partners{" "}
         </div>
         <div className={styles.card_container}>
           <div className={styles.partner_card}>
@@ -277,7 +274,7 @@ const Landing = () => {
                 <Image src={user_img} alt="user" />
                 <div>Omar</div>
               </div>
-              <Rate disabled defaultValue={4} />
+              <Rate disabled defaultValue={5} />
             </div>
           </div>
           <div>
@@ -292,10 +289,10 @@ const Landing = () => {
             </div>
             <div className={styles.rating_name_container}>
               <div className={styles.name_img}>
-                <Image src={user_img} alt="user" />
+                <Image src={user_img} alt="user" width={50} height={50} />
                 <div>Omar</div>
               </div>
-              <Rate disabled defaultValue={4} />
+              <Rate disabled defaultValue={5} />
             </div>
           </div>
         </Slider>

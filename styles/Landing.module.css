@@ -298,6 +298,24 @@
 .slider_container2 {
   margin-top: 32px;
 }
+.success_text {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 18px;
+  color: rgb(23, 187, 23);
+}
+.loading_text {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 18px;
+}
+.input_error_section {
+  margin-left: 10px;
+  margin-top: -20px;
+  color: red;
+  margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 1250px) {
   .profit_container {
     flex-direction: column;
