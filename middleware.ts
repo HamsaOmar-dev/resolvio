@@ -6,8 +6,8 @@ async function apiAccess(req: NextRequest, res: NextResponse) {
     "https://resolvio-pi.vercel.app",
   ];
   if (
-    req.nextUrl.pathname.startsWith("/api")
-    // !authorizedOrigins.includes(req.nextUrl.origin)
+    req.nextUrl.pathname.startsWith("/api") &&
+    !authorizedOrigins.includes(req.nextUrl.origin)
   ) {
     return NextResponse.json("Origin Unauthorized");
   }
