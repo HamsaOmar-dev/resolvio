@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 async function apiAccess(req: NextRequest, res: NextResponse) {
   const authorizedOrigins = [
-    "http://localhost:3000",
+    // "http://localhost:3000",
     "https://resolvio-pi.vercel.app",
   ];
   if (
