@@ -295,6 +295,11 @@ const Landing = () => {
           </div>
         </Slider>
       </div>
+      {!loading ? (
+        <p className={styles.loading_text}>Loading...</p>
+      ) : successmsg ? (
+        <p className={styles.success_text}>"{servermsg}"</p>
+      ) : (
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className={styles.form_container} id="get-started">
             <div className={styles.form_title}>
@@ -389,17 +394,12 @@ const Landing = () => {
                 </p>
               </div>
               <button type="submit" className={styles.demo_btn}>
-                {loading ? (
-                  "Loading..."
-                ) : successmsg ? (
-                  servermsg
-                ) : (
-                  "Get a Demo"
-                )}
+                Get a Demo
               </button>
             </div>
           </div>
         </form>
+      )}
       <div className={styles.copy_right_text}>Copyright © Resolvio 2023</div>
     </>
   );
