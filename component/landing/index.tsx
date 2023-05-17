@@ -19,12 +19,10 @@ import user_img from "../../public/img/user_img.webp";
 import logo1 from "../../public/img/logo1.svg";
 import logo2 from "../../public/img/logo2.svg";
 import logo3 from "../../public/img/logo3.svg";
-import logo4 from "../../public/img/logo4.svg";
 import logo5 from "../../public/img/logo5.svg";
 import next_arrow from "../../public/img/next_arrow.svg";
 import prev_arrow from "../../public/img/prev_arrow.svg";
 import border_dash from "../../public/img/border_dash.svg";
-import quote from "../../public/img/quote.svg";
 import Slider from "react-slick";
 
 const Landing = () => {
@@ -297,12 +295,6 @@ const Landing = () => {
           </div>
         </Slider>
       </div>
-
-      {loading ? (
-        <p className={styles.loading_text}>Loading...</p>
-      ) : successmsg ? (
-        <p className={styles.success_text}>{servermsg}</p>
-      ) : (
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className={styles.form_container} id="get-started">
             <div className={styles.form_title}>
@@ -397,13 +389,17 @@ const Landing = () => {
                 </p>
               </div>
               <button type="submit" className={styles.demo_btn}>
-                Get a Demo
+                {loading ? (
+                  "Loading..."
+                ) : successmsg ? (
+                  servermsg
+                ) : (
+                  "Get a Demo"
+                )}
               </button>
             </div>
           </div>
         </form>
-      )}
-
       <div className={styles.copy_right_text}>Copyright © Resolvio 2023</div>
     </>
   );
