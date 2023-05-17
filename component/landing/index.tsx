@@ -322,7 +322,7 @@ const Landing = () => {
                     })}
                   />
                   <p className={styles.input_error_section}>
-                    {errors.FirstName?.message?.toString()}
+                    {errors.firstName?.message?.toString()}
                   </p>
                 </div>
                 <div className={styles.label_input}>
@@ -336,7 +336,7 @@ const Landing = () => {
                     })}
                   />
                   <p className={styles.input_error_section}>
-                    {errors.LastName?.message?.toString()}
+                    {errors.lastName?.message?.toString()}
                   </p>
                 </div>
               </div>
@@ -356,7 +356,7 @@ const Landing = () => {
                     })}
                   />
                   <p className={styles.input_error_section}>
-                    {errors.CompanyEmail?.message?.toString()}
+                    {errors.companyEmail?.message?.toString()}
                   </p>
                 </div>
                 <div className={styles.label_input}>
@@ -378,7 +378,7 @@ const Landing = () => {
                     })}
                   />
                   <p className={styles.input_error_section}>
-                    {errors.PhoneNumber?.message?.toString()}
+                    {errors.phoneNumber?.message?.toString()}
                   </p>
                 </div>
               </div>
@@ -393,7 +393,7 @@ const Landing = () => {
                   })}
                 />
                 <p className={styles.input_error_section}>
-                  {errors.CompanyName?.message?.toString()}
+                  {errors.companyName?.message?.toString()}
                 </p>
               </div>
               <button type="submit" className={styles.demo_btn}>
