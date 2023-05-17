@@ -295,7 +295,7 @@ const Landing = () => {
           </div>
         </Slider>
       </div>
-      {!loading ? (
+      {loading ? (
         <p className={styles.loading_text}>Loading...</p>
       ) : successmsg ? (
         <p className={styles.success_text}>"{servermsg}"</p>
