@@ -299,7 +299,7 @@ const Landing = () => {
       {loading ? (
         <p className={styles.loading_text}>Loading...</p>
       ) : successmsg ? (
-        <p className={styles.success_text}>"{servermsg}"</p>
+        <p className={styles.success_text}>{servermsg}</p>
       ) : (
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className={styles.form_container} id="get-started">
