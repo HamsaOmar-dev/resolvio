@@ -16,6 +16,7 @@ import transfer_icon from "../../public/img/transfer_icon.svg";
 import bag_icon from "../../public/img/bag_icon.svg";
 import wallet_icon from "../../public/img/wallet_icon.svg";
 import user_img from "../../public/img/user_img.webp";
+import user_img_2 from "../../public/img/user_img.svg";
 import logo1 from "../../public/img/logo1.svg";
 import logo2 from "../../public/img/logo2.svg";
 import logo3 from "../../public/img/logo3.svg";
@@ -287,7 +288,7 @@ const Landing = () => {
             </div>
             <div className={styles.rating_name_container}>
               <div className={styles.name_img}>
-                <Image src={user_img} alt="user" width={50} height={50} />
+                <Image src={user_img_2} alt="user" width={50} height={50} />
                 <div>Omar</div>
               </div>
               <Rate disabled defaultValue={5} />
